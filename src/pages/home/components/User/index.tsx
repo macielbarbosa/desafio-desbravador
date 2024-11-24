@@ -1,4 +1,4 @@
-import { Avatar, Box, Grid2 as Grid, Typography } from "@mui/material";
+import { Avatar, Grid2 as Grid, Typography } from "@mui/material";
 import { Data, Root } from "./style";
 import { observer } from "mobx-react-lite";
 import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";

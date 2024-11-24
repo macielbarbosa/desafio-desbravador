@@ -1,4 +1,4 @@
-import { Box, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import styled from "styled-components";
 
 export const Root = styled(Paper)`
