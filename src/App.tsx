@@ -1,13 +1,12 @@
 import { Outlet } from "react-router";
 
-import "./App.css";
+import { Root } from "./style";
 
 function App() {
   return (
-    <>
-      <p>APP</p>
+    <Root>
       <Outlet />
-    </>
+    </Root>
   );
 }
 
