@@ -5,4 +5,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0.5rem;
+  min-height: 100vh;
+  background-color: #fcfcfc;
+}
+
+#root {
+  max-width: 70rem;
+  width: 100%;
 }

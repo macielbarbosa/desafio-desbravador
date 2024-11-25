@@ -3,8 +3,12 @@ import { Box } from "@mui/material";
 
 export const Root = styled(Box)`
   display: flex;
-  justify-content: center;
-  padding: 2rem 0.5rem;
-  min-height: 100vh;
-  background-color: #fcfcfc;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+export const Header = styled(Box)`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
