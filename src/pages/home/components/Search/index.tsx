@@ -41,7 +41,10 @@ export const Search = observer(() => {
     }
   };
 
-  const clearUsername = () => setUsername("");
+  const clearUsername = () => {
+    setUsername("");
+    document.getElementById("search-input")?.focus();
+  };
 
   const clearInputAdornment = (
     <InputAdornment position="end">
@@ -54,6 +57,7 @@ export const Search = observer(() => {
   return (
     <Root>
       <TextField
+        id="search-input"
         size="small"
         placeholder="Digite o username..."
         value={username}
