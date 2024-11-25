@@ -17,5 +17,28 @@ export const Data = styled(Box)`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-width: 18rem;
+  flex: 1;
+`;
+
+export const Repositories = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-grow: 1;
+`;
+
+export const RepositoriesHeader = styled(Box)`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  .MuiSelect-select svg {
+    font-size: 1rem;
+    margin-bottom: -0.125rem;
+  }
+  > :last-child {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
 `;
