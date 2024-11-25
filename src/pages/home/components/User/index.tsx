@@ -36,7 +36,11 @@ export const User = observer(() => {
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
         {repositories?.map((repository, index) => (
-          <Grid key={index} size={{ xs: 12, sm: 6, md: 6, lg: 4 }}>
+          <Grid
+            key={index}
+            size={{ xs: 12, sm: 6, md: 6, lg: 4 }}
+            sx={{ minWidth: 256 }}
+          >
             <Repository value={repository} />
           </Grid>
         ))}

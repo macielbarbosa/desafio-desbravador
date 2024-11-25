@@ -6,6 +6,8 @@ import { theme } from "@src/theme";
 export const Root = styled(Box)`
   display: flex;
   gap: 2rem;
+  align-items: start;
+  width: 100%;
   ${theme.breakpoints.down("sm")} {
     flex-wrap: wrap;
   }

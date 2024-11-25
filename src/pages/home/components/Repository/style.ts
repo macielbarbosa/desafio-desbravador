@@ -9,4 +9,8 @@ export const Root = styled(Paper)`
   height: 100%;
   justify-content: space-between;
   align-items: start;
+  > :first-child {
+    text-align: left;
+    padding: 0.25rem 0.25rem 0.25rem 0;
+  }
 `;
