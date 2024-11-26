@@ -45,9 +45,11 @@ export const Repository = () => {
           <Label>
             <StarBorder /> {repository?.stargazers_count}
           </Label>
-          <Label>
-            <Code /> {repository?.language}
-          </Label>
+          {repository?.language && (
+            <Label>
+              <Code /> {repository?.language}
+            </Label>
+          )}
         </Labels>
       </Header>
       <Typography>{repository?.description}</Typography>
