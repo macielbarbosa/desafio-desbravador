@@ -6,6 +6,7 @@ import {
   IconButton,
   InputAdornment,
   TextField,
+  Tooltip,
 } from "@mui/material";
 import { Clear, Search as SearchIcon } from "@mui/icons-material";
 
@@ -15,8 +16,8 @@ import { useHome } from "@pages/home/context";
 import { Root } from "./style";
 
 export const Search = observer(() => {
-  const [username, setUsername] = useState<string>("");
-  const { setUser, setRepositories, isLoading, setIsLoading } = useHome();
+  const { user, setUser, setRepositories, isLoading, setIsLoading } = useHome();
+  const [username, setUsername] = useState<string>(user?.login || "");
 
   const request = async (endpoint: string, setFn: (data: any) => void) => {
     const { data } = await axiosInstance(endpoint);
@@ -44,9 +45,11 @@ export const Search = observer(() => {
 
   const clearInputAdornment = (
     <InputAdornment position="end">
-      <IconButton size="small" title="Limpar" onClick={clearUsername}>
-        <Clear />
-      </IconButton>
+      <Tooltip title="Limpar">
+        <IconButton size="small" onClick={clearUsername}>
+          <Clear />
+        </IconButton>
+      </Tooltip>
     </InputAdornment>
   );
 
