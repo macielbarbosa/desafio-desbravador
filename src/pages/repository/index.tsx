@@ -4,6 +4,7 @@ import { Avatar, Button, Typography } from "@mui/material";
 import StarBorder from "@mui/icons-material/StarBorder";
 import OpenInNew from "@mui/icons-material/OpenInNew";
 import Code from "@mui/icons-material/Code";
+import KeyboardBackspaceOutlinedIcon from "@mui/icons-material/KeyboardBackspaceOutlined";
 
 import { axiosInstance } from "@utils/axiosInstance";
 import { Repository as IRepository } from "@models/repository";
@@ -59,6 +60,12 @@ export const Repository = () => {
         onClick={() => window.open(repository?.html_url)}
       >
         Abrir no Github
+      </Button>
+      <Button
+        startIcon={<KeyboardBackspaceOutlinedIcon />}
+        onClick={() => navigate("/")}
+      >
+        Voltar
       </Button>
     </Root>
   );
