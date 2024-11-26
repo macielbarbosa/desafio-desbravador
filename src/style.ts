@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 export const Root = styled(Box)`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 `;
 
 export const Header = styled(Box)`
