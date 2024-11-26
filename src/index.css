@@ -6,13 +6,19 @@
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
-  justify-content: center;
   padding: 2rem 0.5rem;
   min-height: 100vh;
   background-color: #fcfcfc;
 }
 
+@media screen and (min-width: 70rem) {
+  body {
+    justify-content: center;
+  }
+}
+
 #root {
   max-width: 70rem;
+  min-width: 22rem;
   width: 100%;
 }
