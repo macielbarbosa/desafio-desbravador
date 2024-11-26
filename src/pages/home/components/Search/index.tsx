@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { observer } from "mobx-react-lite";
 import {
   Button,
@@ -15,12 +15,8 @@ import { useHome } from "@pages/home/context";
 import { Root } from "./style";
 
 export const Search = observer(() => {
-  const [username, setUsername] = useState<string>("macielbarbosa");
+  const [username, setUsername] = useState<string>("");
   const { setUser, setRepositories, isLoading, setIsLoading } = useHome();
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   const request = async (endpoint: string, setFn: (data: any) => void) => {
     const { data } = await axiosInstance(endpoint);
