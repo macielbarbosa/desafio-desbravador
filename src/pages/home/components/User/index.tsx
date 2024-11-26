@@ -15,7 +15,7 @@ import StarBorder from "@mui/icons-material/StarBorder";
 import { useHome } from "@pages/home/context";
 import { Labels } from "@components/Labels";
 import { Label } from "@components/Label";
-import { Repository as IRepository } from "@pages/home/interfaces";
+import { Repository as IRepository } from "@models/repository";
 
 import { Repository } from "../Repository";
 

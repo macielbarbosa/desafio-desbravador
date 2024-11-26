@@ -1,12 +1,3 @@
-export interface User {
-  name: string;
-  avatar_url: string;
-  followers: number;
-  following: number;
-  email: string | null;
-  bio: string;
-}
-
 export interface Repository {
   name: string;
   description: string;

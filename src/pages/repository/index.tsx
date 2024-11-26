@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 
 import { axiosInstance } from "@utils/axiosInstance";
-import { Repository as IRepository } from "@pages/home/interfaces";
+import { Repository as IRepository } from "@models/repository";
 
 export const Repository = () => {
   const { username, name } = useParams();

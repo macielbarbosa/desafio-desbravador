@@ -26,6 +26,7 @@
       "@pages/*": ["./src/pages/*"],
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
+      "@models/*": ["./src/models/*"],
       "@src/*": ["./src/*"]
     }
   },

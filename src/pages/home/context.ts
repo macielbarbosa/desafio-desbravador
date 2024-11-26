@@ -1,7 +1,8 @@
 import { createContext, useContext } from "react";
 import { makeAutoObservable } from "mobx";
 
-import { Repository, User } from "./interfaces";
+import { Repository } from "@models/repository";
+import { User } from "@models/user";
 
 class HomeStore {
   user?: User | null;
