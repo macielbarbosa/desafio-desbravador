@@ -5,4 +5,7 @@ export interface Repository {
   stargazers_count: number;
   html_url: string;
   full_name: string;
+  owner: {
+    avatar_url: string;
+  };
 }
